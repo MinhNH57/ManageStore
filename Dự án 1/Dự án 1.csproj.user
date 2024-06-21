@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="GUI\BanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\DialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmthanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\hoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\KhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\magg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\trangNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

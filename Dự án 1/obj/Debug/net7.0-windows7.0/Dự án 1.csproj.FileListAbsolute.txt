@@ -1,0 +1,128 @@
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Dự án 1.exe
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Dự án 1.deps.json
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Dự án 1.runtimeconfig.json
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Dự án 1.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Dự án 1.pdb
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\AForge.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\AForge.Video.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\AForge.Video.DirectShow.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Humanizer.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Logging.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Options.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Identity.Client.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\QRCoder.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\SunnyUI.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\SunnyUI.Common.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\System.Runtime.Caching.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\zxing.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\zxing.presentation.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Interop.ComInterfaceGenerator.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Interop.LibraryImportGenerator.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\System.Windows.Forms.Analyzers.CSharp.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Interop.SourceGeneration.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\cs\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\de\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\es\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\fr\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\it\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ja\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ko\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\pl\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\pt-BR\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ru\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\tr\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\zh-Hans\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\zh-Hant\Microsoft.Interop.ComInterfaceGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\cs\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\de\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\es\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\fr\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\it\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ja\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ko\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\pl\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\pt-BR\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ru\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\tr\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\zh-Hans\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\zh-Hant\Microsoft.Interop.LibraryImportGenerator.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\cs\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\de\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\es\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\fr\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\it\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ja\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ko\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\pl\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\pt-BR\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\ru\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\tr\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\zh-Hans\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\zh-Hant\Microsoft.Interop.SourceGeneration.resources.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.BanHang.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.DialogForm.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\QRCodeReader.Form1.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.frmthanhToan.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.hoadon.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.khachhang.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\WinFormsApp1.Login.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.magg.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.nhanvien.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN.SanPham.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.TK.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\WinFormsApp1.TrangChu.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.trangNhanVien.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.Properties.Resources.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.csproj.GenerateResource.cache
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.AssemblyInfo.cs
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.sourcelink.json
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.csproj.CopyComplete
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\refint\Dự án 1.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.pdb
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự án 1.genruntimeconfig.cache
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\ref\Dự án 1.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.Form2.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.KhuyenMai.resources
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\EPPlus.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\EPPlus.Interfaces.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\EPPlus.System.Drawing.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Dell\Desktop\Duan1-Nhom2 (2) (1)\Dự án 1\bin\Debug\net7.0-windows7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll

@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|c:\\users\\admin\\desktop\\duan1-nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|c:\\users\\admin\\desktop\\duan1-nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|c:\\users\\admin\\desktop\\duan1-nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|c:\\users\\admin\\desktop\\duan1-nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|c:\\users\\admin\\desktop\\duan1-nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|c:\\users\\admin\\desktop\\duan1-nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|c:\\users\\admin\\desktop\\duan1-nhom2 (2)\\d\u1EF1 \u00E1n 1\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|c:\\users\\admin\\desktop\\duan1-nhom2 (2)\\d\u1EF1 \u00E1n 1\\dal\\models\\duan1nhomcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56C79107-EE10-47FF-AB2C-FCA0B02AF24A}|D\u1EF1 \u00E1n 1\\D\u1EF1 \u00E1n 1.csproj|solutionrelative:d\u1EF1 \u00E1n 1\\dal\\models\\duan1nhomcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BanHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\BanHang.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\BanHang.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\BanHang.cs [Design]",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\BanHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T01:11:09.263Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\SanPham.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\SanPham.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\SanPham.cs",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\SanPham.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T01:03:36.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SanPham.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\SanPham.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\SanPham.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\SanPham.cs [Design]",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\SanPham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T01:03:28.328Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "khachhang.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\khachhang.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\khachhang.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\khachhang.cs",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\khachhang.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAowD4AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T00:53:23.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "khachhang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\khachhang.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\khachhang.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\khachhang.cs [Design]",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\khachhang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T00:53:11.49Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\Form1.cs",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\Form1.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAUwDcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T00:40:32.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DUAN1NHOMContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\DAL\\Models\\DUAN1NHOMContext.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\DAL\\Models\\DUAN1NHOMContext.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\DAL\\Models\\DUAN1NHOMContext.cs",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\DAL\\Models\\DUAN1NHOMContext.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T00:37:31.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\Login.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\Login.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\Login.cs",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\Login.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T00:37:08.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\Login.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\Login.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\Login.cs [Design]",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T00:37:09.406Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BanHang.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\BanHang.cs",
+              "RelativeDocumentMoniker": "D\u1EF1 \u00E1n 1\\GUI\\BanHang.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Duan1-Nhom2 (2)\\D\u1EF1 \u00E1n 1\\GUI\\BanHang.cs",
+              "RelativeToolTip": "D\u1EF1 \u00E1n 1\\GUI\\BanHang.cs",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAjwOQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T00:37:09.415Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

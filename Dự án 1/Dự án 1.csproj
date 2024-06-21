@@ -1,0 +1,100 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
+    <RootNamespace>Dự_án_1</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net7.0-windows7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net7.0-windows7.0\Dự án 1.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net7.0-windows7.0\Dự án 1.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net7.0-windows7.0\Dự án 1.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net7.0-windows7.0\Dự án 1.sourcelink.json" />
+    <Content Include="obj\Dự án 1.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net7.0-windows7.0\apphost.exe" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.assets.cache" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.csproj.CopyComplete" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.dll" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự án 1.pdb" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.BanHang.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.DialogForm.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.frmthanhToan.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.hoadon.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.khachhang.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.magg.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.nhanvien.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.TK.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.GUI.trangNhanVien.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\Dự_án_1.Properties.Resources.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\QRCodeReader.Form1.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\refint\Dự án 1.dll" />
+    <None Include="obj\Debug\net7.0-windows7.0\ref\Dự án 1.dll" />
+    <None Include="obj\Debug\net7.0-windows7.0\WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN.SanPham.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\WinFormsApp1.Login.resources" />
+    <None Include="obj\Debug\net7.0-windows7.0\WinFormsApp1.TrangChu.resources" />
+    <None Include="obj\Dự án 1.csproj.nuget.g.props" />
+    <None Include="obj\Dự án 1.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AForge.Video" Version="2.2.5" />
+    <PackageReference Include="AForge.Video.DirectShow" Version="2.2.5" />
+    <PackageReference Include="EPPlus" Version="7.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="QRCoder" Version="1.4.1" />
+    <PackageReference Include="SunnyUI" Version="3.6.5" />
+    <PackageReference Include="ZXing.Net" Version="0.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Interop.ComInterfaceGenerator">
+      <HintPath>..\..\..\..\..\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.0\analyzers\dotnet\cs\Microsoft.Interop.ComInterfaceGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Interop.LibraryImportGenerator">
+      <HintPath>..\..\..\..\..\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.0\analyzers\dotnet\cs\Microsoft.Interop.LibraryImportGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.Analyzers.CSharp.resources">
+      <HintPath>..\..\..\..\..\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\7.0.14\analyzers\dotnet\cs\cs\System.Windows.Forms.Analyzers.CSharp.resources.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
