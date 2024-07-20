@@ -55,7 +55,7 @@ namespace Dự_án_1.GUI
                 hds.Tenkh,
                 hds.Tennv,
                 tongtien = hds.TongTien.ToString("#,##0"),
-                VAT = "10%".ToString(),
+                VAT = (VAT.mucVAT).ToString(),
                 TongTienVAT = (hds.TongTien + (hds.TongTien * 0.1m)).ToString("#,##0"),
                 hds.TinhTrang
             });

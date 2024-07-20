@@ -1,10 +1,9 @@
-﻿using AForge.Video;
-using AForge.Video.DirectShow;
+﻿
+using ClassLibrary1;
 using Dự_án_1.BLL;
 using Dự_án_1.BLL.Service;
 using Dự_án_1.DAL.Models;
 using Dự_án_1.Valiable;
-using QRCodeReader;
 using Sunny.UI;
 using System;
 using System.Collections.Generic;
@@ -16,6 +15,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OpenCvSharp;
+using OpenCvSharp.Extensions;
 
 namespace Dự_án_1.GUI
 {
@@ -35,8 +36,6 @@ namespace Dự_án_1.GUI
         #region
         string maspct;
         string mahdct;
-        private FilterInfoCollection camCollection;
-        private VideoCaptureDevice videoSource;
         private bool scanning = false;
         #endregion
         public BanHang()
@@ -897,12 +896,6 @@ namespace Dự_án_1.GUI
             nv = null;
             string maspct = null;
             string mahdct = null;
-            if (videoSource != null)
-            {
-                videoSource.SignalToStop();
-                videoSource.WaitForStop();
-                videoSource = null;
-            }
         }
 
         private void dgv_sanPham_MouseEnter(object sender, EventArgs e)
@@ -964,8 +957,89 @@ namespace Dự_án_1.GUI
 
         private void btn_sacnQR_Click(object sender, EventArgs e)
         {
-            Form1 frm1 = new();
-            frm1.ShowDialog();
+            ScanQR();
+        }
+
+        protected void ScanQR()
+        {
+            Class1 class1 = new Class1();
+            string maspct = class1.TurnCamera();
+            var product = (from i in spct.getAllSPCTSer()
+                           join ms in ms.getAllColorSer() on i.Mamau equals ms.Mamau
+                           join kt in ss.getAllSizeSer() on i.Masize equals kt.Masize
+                           where i.Maspct == maspct
+                           select new
+                           {
+                               Product = i,
+                               Color = ms,
+                               Size = kt
+                           }).FirstOrDefault();
+            lbl_tenSP.Text = product?.Product.Tenspct;
+            lbl_mau.Text = product?.Color.Tenmau;
+            lbl_size.Text = product?.Size.Tensize;
+            decimal giaTien = product.Product.Dongia;
+            lbl_giaTien.Text = giaTien.ToString();
+            object img = product.Product.HinhAnh;
+            pic_spct.Image?.Dispose();
+            byte[] imageData = (byte[])img;
+            using (MemoryStream ms = new MemoryStream(imageData))
+            {
+                Image image = Image.FromStream(ms);
+                pic_spct.Image = image;
+            }
+            lbl_sl.Text = 1.ToString();
+
+            // Them hoa don
+            if (!string.IsNullOrEmpty(lbl_maHD.Text))
+            {
+                if (spct.getAllSPCTSer().Find(x => x.Maspct == maspct).Soluong >= int.Parse(lbl_sl.Text))
+                {
+                    var exeHDCT = hdct.getAllHDCTSer().FirstOrDefault(x => x.Mahd == lbl_maHD.Text && x.Maspct == maspct);
+                    if (exeHDCT != null)
+                    {
+                        int slcong = int.Parse(lbl_sl.Text);
+                        int slThucTe = exeHDCT.Soluong + slcong;
+                        hdct.UpdateHDCTSer(exeHDCT.Idhdct, maspct, lbl_maHD.Text, slThucTe, exeHDCT.Dongia);
+                        loadHDCT();
+                        var spctItem = spct.getAllSPCTSer().Find(x => x.Maspct == maspct);
+                        if (spctItem != null)
+                        {
+                            int slcon = spctItem.Soluong;
+                            int slconlai = spct.tinhToanSl(slcon, int.Parse(lbl_sl.Text));
+                            string mess1 = spct.updateSL(maspct, slconlai);
+                            loadSP();
+                        }
+                    }
+                    else
+                    {
+                        decimal donGia = spct.getAllSPCTSer().Find(x => x.Maspct == maspct).Dongia;
+                        hdct.CreateHDCTSer(CreateMaHDCT(), maspct, lbl_maHD.Text, int.Parse(lbl_sl.Text), donGia);
+                        loadHDCT();
+
+                        var spctItem = spct.getAllSPCTSer().Find(x => x.Maspct == maspct);
+                        if (spctItem != null)
+                        {
+                            int slcon = spctItem.Soluong;
+                            int slconlai = spct.tinhToanSl(slcon, int.Parse(lbl_sl.Text));
+                            string mess1 = spct.updateSL(maspct, slconlai);
+                            loadSP();
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Số lượng hàng còn lại không đủ ", "Thông báo");
+                    lbl_sl.Text = null;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa có hóa đơn", "Thông báo");
+            }
+        }
+        private void lb_VAT_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

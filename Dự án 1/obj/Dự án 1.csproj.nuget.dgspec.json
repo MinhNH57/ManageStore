@@ -1,17 +1,103 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\Desktop\\Duan1-Nhom2 (2) (1)\\Dự án 1\\Dự án 1.csproj": {}
+    "C:\\Users\\Dell\\Desktop\\ManageStore\\Dự án 1\\Dự án 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\Desktop\\Duan1-Nhom2 (2) (1)\\Dự án 1\\Dự án 1.csproj": {
+    "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Duan1-Nhom2 (2) (1)\\Dự án 1\\Dự án 1.csproj",
-        "projectName": "Dự án 1",
-        "projectPath": "C:\\Users\\Dell\\Desktop\\Duan1-Nhom2 (2) (1)\\Dự án 1\\Dự án 1.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectName": "ClassLibrary1",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\Desktop\\Duan1-Nhom2 (2) (1)\\Dự án 1\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "OpenCV": {
+              "target": "Package",
+              "version": "[2.4.11, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
+            "OpenCvSharp4.Extensions": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
+            "ZBar": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dell\\Desktop\\ManageStore\\Dự án 1\\Dự án 1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\ManageStore\\Dự án 1\\Dự án 1.csproj",
+        "projectName": "Dự án 1",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\ManageStore\\Dự án 1\\Dự án 1.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\ManageStore\\Dự án 1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -32,7 +118,11 @@
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Dell\\Desktop\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -45,14 +135,6 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows7.0",
           "dependencies": {
-            "AForge.Video": {
-              "target": "Package",
-              "version": "[2.2.5, )"
-            },
-            "AForge.Video.DirectShow": {
-              "target": "Package",
-              "version": "[2.2.5, )"
-            },
             "EPPlus": {
               "target": "Package",
               "version": "[7.1.2, )"
@@ -67,6 +149,18 @@
               "target": "Package",
               "version": "[6.0.15, )"
             },
+            "OpenCV": {
+              "target": "Package",
+              "version": "[2.4.11, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
+            "OpenCvSharp4.WpfExtensions": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
             "QRCoder": {
               "target": "Package",
               "version": "[1.4.1, )"
@@ -75,9 +169,13 @@
               "target": "Package",
               "version": "[3.6.5, )"
             },
-            "ZXing.Net": {
+            "System.Drawing.Common": {
               "target": "Package",
-              "version": "[0.10.0, )"
+              "version": "[8.0.0, )"
+            },
+            "ZBar": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             }
           },
           "imports": [

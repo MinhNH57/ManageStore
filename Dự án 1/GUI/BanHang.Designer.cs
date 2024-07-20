@@ -30,21 +30,21 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BanHang));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle16 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle17 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle18 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle19 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle20 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle21 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle22 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle23 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle24 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle25 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle26 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle27 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle28 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle29 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle30 = new DataGridViewCellStyle();
             uiPanel1 = new Sunny.UI.UIPanel();
             lbl_sl = new Sunny.UI.UILabel();
             pic_spct = new PictureBox();
@@ -52,7 +52,7 @@
             uiLabel5 = new Sunny.UI.UILabel();
             lbl_mau = new Sunny.UI.UILabel();
             lbl_size = new Sunny.UI.UILabel();
-            lbl_tongTien = new Sunny.UI.UILabel();
+            lbl_giaTien = new Sunny.UI.UILabel();
             uiLabel9 = new Sunny.UI.UILabel();
             uiLabel3 = new Sunny.UI.UILabel();
             lbl_tenSP = new Sunny.UI.UILabel();
@@ -127,7 +127,7 @@
             uiPanel1.Controls.Add(uiLabel5);
             uiPanel1.Controls.Add(lbl_mau);
             uiPanel1.Controls.Add(lbl_size);
-            uiPanel1.Controls.Add(lbl_tongTien);
+            uiPanel1.Controls.Add(lbl_giaTien);
             uiPanel1.Controls.Add(uiLabel9);
             uiPanel1.Controls.Add(uiLabel3);
             uiPanel1.Controls.Add(lbl_tenSP);
@@ -135,7 +135,7 @@
             uiPanel1.FillColor = Color.FromArgb(192, 192, 255);
             uiPanel1.FillColor2 = Color.FromArgb(192, 192, 255);
             uiPanel1.FillColorGradient = true;
-            uiPanel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel1.Location = new Point(13, 14);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
@@ -150,7 +150,7 @@
             // 
             // lbl_sl
             // 
-            lbl_sl.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_sl.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_sl.ForeColor = Color.FromArgb(48, 48, 48);
             lbl_sl.Location = new Point(221, 70);
             lbl_sl.Name = "lbl_sl";
@@ -170,7 +170,7 @@
             // 
             // uiLabel6
             // 
-            uiLabel6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel6.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel6.Location = new Point(303, 113);
             uiLabel6.Name = "uiLabel6";
@@ -181,7 +181,7 @@
             // 
             // uiLabel5
             // 
-            uiLabel5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel5.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel5.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel5.Location = new Point(303, 70);
             uiLabel5.Name = "uiLabel5";
@@ -192,7 +192,7 @@
             // 
             // lbl_mau
             // 
-            lbl_mau.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_mau.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_mau.ForeColor = Color.White;
             lbl_mau.Location = new Point(406, 113);
             lbl_mau.Name = "lbl_mau";
@@ -202,7 +202,7 @@
             // 
             // lbl_size
             // 
-            lbl_size.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_size.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_size.ForeColor = Color.White;
             lbl_size.Location = new Point(406, 70);
             lbl_size.Name = "lbl_size";
@@ -210,41 +210,41 @@
             lbl_size.TabIndex = 0;
             lbl_size.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lbl_tongTien
+            // lbl_giaTien
             // 
-            lbl_tongTien.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_tongTien.ForeColor = Color.White;
-            lbl_tongTien.Location = new Point(191, 113);
-            lbl_tongTien.Name = "lbl_tongTien";
-            lbl_tongTien.Size = new Size(89, 29);
-            lbl_tongTien.TabIndex = 0;
-            lbl_tongTien.TextAlign = ContentAlignment.MiddleLeft;
+            lbl_giaTien.Font = new Font("Microsoft Sans Serif", 12F);
+            lbl_giaTien.ForeColor = Color.White;
+            lbl_giaTien.Location = new Point(191, 113);
+            lbl_giaTien.Name = "lbl_giaTien";
+            lbl_giaTien.Size = new Size(89, 29);
+            lbl_giaTien.TabIndex = 0;
+            lbl_giaTien.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // uiLabel9
             // 
-            uiLabel9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel9.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel9.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel9.Location = new Point(74, 113);
             uiLabel9.Name = "uiLabel9";
             uiLabel9.Size = new Size(111, 29);
             uiLabel9.TabIndex = 0;
-            uiLabel9.Text = "Tổng tiền :";
-            uiLabel9.TextAlign = ContentAlignment.MiddleCenter;
+            uiLabel9.Text = "Giá tiền :";
+            uiLabel9.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // uiLabel3
             // 
-            uiLabel3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel3.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel3.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel3.Location = new Point(74, 70);
             uiLabel3.Name = "uiLabel3";
             uiLabel3.Size = new Size(156, 29);
             uiLabel3.TabIndex = 0;
             uiLabel3.Text = "Số lượng mua :";
-            uiLabel3.TextAlign = ContentAlignment.MiddleCenter;
+            uiLabel3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lbl_tenSP
             // 
-            lbl_tenSP.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_tenSP.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_tenSP.ForeColor = Color.White;
             lbl_tenSP.Location = new Point(236, 23);
             lbl_tenSP.Name = "lbl_tenSP";
@@ -254,18 +254,18 @@
             // 
             // uiLabel1
             // 
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel1.Location = new Point(74, 23);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(156, 29);
             uiLabel1.TabIndex = 0;
             uiLabel1.Text = "Tên sản phẩm :";
-            uiLabel1.TextAlign = ContentAlignment.MiddleCenter;
+            uiLabel1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // btn_sacnQR
             // 
-            btn_sacnQR.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_sacnQR.Font = new Font("Microsoft Sans Serif", 12F);
             btn_sacnQR.Image = (Image)resources.GetObject("btn_sacnQR.Image");
             btn_sacnQR.Location = new Point(672, -2);
             btn_sacnQR.Name = "btn_sacnQR";
@@ -279,7 +279,7 @@
             // 
             // btn_addHDCT
             // 
-            btn_addHDCT.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_addHDCT.Font = new Font("Microsoft Sans Serif", 12F);
             btn_addHDCT.Image = (Image)resources.GetObject("btn_addHDCT.Image");
             btn_addHDCT.Location = new Point(584, -2);
             btn_addHDCT.Name = "btn_addHDCT";
@@ -306,7 +306,7 @@
             uiPanel2.FillColor = Color.FromArgb(192, 192, 255);
             uiPanel2.FillColor2 = Color.FromArgb(192, 192, 255);
             uiPanel2.FillColorGradient = true;
-            uiPanel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel2.Location = new Point(786, 14);
             uiPanel2.Margin = new Padding(4, 5, 4, 5);
             uiPanel2.MinimumSize = new Size(1, 1);
@@ -319,7 +319,7 @@
             // 
             // txt_SDT
             // 
-            txt_SDT.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_SDT.Font = new Font("Microsoft Sans Serif", 12F);
             txt_SDT.Location = new Point(113, 150);
             txt_SDT.Margin = new Padding(4, 5, 4, 5);
             txt_SDT.MinimumSize = new Size(1, 16);
@@ -335,7 +335,7 @@
             // 
             // txt_tenKH
             // 
-            txt_tenKH.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_tenKH.Font = new Font("Microsoft Sans Serif", 12F);
             txt_tenKH.Location = new Point(113, 106);
             txt_tenKH.Margin = new Padding(4, 5, 4, 5);
             txt_tenKH.MinimumSize = new Size(1, 16);
@@ -361,7 +361,7 @@
             // 
             // uiLabel12
             // 
-            uiLabel12.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel12.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel12.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel12.Location = new Point(9, 157);
             uiLabel12.Name = "uiLabel12";
@@ -372,7 +372,7 @@
             // 
             // uiLabel11
             // 
-            uiLabel11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel11.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel11.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel11.Location = new Point(2, 120);
             uiLabel11.Name = "uiLabel11";
@@ -383,7 +383,7 @@
             // 
             // uiLabel4
             // 
-            uiLabel4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel4.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel4.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel4.Location = new Point(11, 79);
             uiLabel4.Name = "uiLabel4";
@@ -394,7 +394,7 @@
             // 
             // lbl_maKH
             // 
-            lbl_maKH.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_maKH.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_maKH.ForeColor = Color.White;
             lbl_maKH.Location = new Point(113, 78);
             lbl_maKH.Name = "lbl_maKH";
@@ -404,7 +404,7 @@
             // 
             // uiLabel2
             // 
-            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             uiLabel2.ForeColor = Color.FromArgb(192, 0, 192);
             uiLabel2.Location = new Point(113, 25);
             uiLabel2.Name = "uiLabel2";
@@ -436,7 +436,7 @@
             uiPanel3.FillColor = Color.FromArgb(192, 192, 255);
             uiPanel3.FillColor2 = Color.FromArgb(192, 192, 255);
             uiPanel3.FillColorGradient = true;
-            uiPanel3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiPanel3.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel3.Location = new Point(789, 210);
             uiPanel3.Margin = new Padding(4, 5, 4, 5);
             uiPanel3.MinimumSize = new Size(1, 1);
@@ -461,7 +461,7 @@
             // btn_đinhanhHD
             // 
             btn_đinhanhHD.BackgroundImage = (Image)resources.GetObject("btn_đinhanhHD.BackgroundImage");
-            btn_đinhanhHD.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_đinhanhHD.Font = new Font("Microsoft Sans Serif", 12F);
             btn_đinhanhHD.Image = (Image)resources.GetObject("btn_đinhanhHD.Image");
             btn_đinhanhHD.Location = new Point(121, 344);
             btn_đinhanhHD.Name = "btn_đinhanhHD";
@@ -476,7 +476,7 @@
             // btn_thanhToan
             // 
             btn_thanhToan.BackgroundImage = (Image)resources.GetObject("btn_thanhToan.BackgroundImage");
-            btn_thanhToan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_thanhToan.Font = new Font("Microsoft Sans Serif", 12F);
             btn_thanhToan.Image = (Image)resources.GetObject("btn_thanhToan.Image");
             btn_thanhToan.Location = new Point(236, 344);
             btn_thanhToan.Name = "btn_thanhToan";
@@ -491,7 +491,7 @@
             // btn_themHDC
             // 
             btn_themHDC.BackgroundImage = (Image)resources.GetObject("btn_themHDC.BackgroundImage");
-            btn_themHDC.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_themHDC.Font = new Font("Microsoft Sans Serif", 12F);
             btn_themHDC.Image = (Image)resources.GetObject("btn_themHDC.Image");
             btn_themHDC.Location = new Point(12, 344);
             btn_themHDC.Name = "btn_themHDC";
@@ -505,7 +505,7 @@
             // 
             // uiLabel18
             // 
-            uiLabel18.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel18.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel18.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel18.Location = new Point(198, 264);
             uiLabel18.Name = "uiLabel18";
@@ -516,7 +516,7 @@
             // 
             // uiLabel17
             // 
-            uiLabel17.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel17.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel17.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel17.Location = new Point(11, 264);
             uiLabel17.Name = "uiLabel17";
@@ -527,7 +527,7 @@
             // 
             // uiLabel16
             // 
-            uiLabel16.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel16.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel16.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel16.Location = new Point(11, 177);
             uiLabel16.Name = "uiLabel16";
@@ -538,7 +538,7 @@
             // 
             // uiLabel7
             // 
-            uiLabel7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            uiLabel7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             uiLabel7.ForeColor = Color.FromArgb(192, 0, 192);
             uiLabel7.Location = new Point(131, 21);
             uiLabel7.Name = "uiLabel7";
@@ -549,7 +549,7 @@
             // 
             // uiLabel15
             // 
-            uiLabel15.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel15.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel15.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel15.Location = new Point(198, 180);
             uiLabel15.Name = "uiLabel15";
@@ -560,7 +560,7 @@
             // 
             // lbl_tienThua
             // 
-            lbl_tienThua.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_tienThua.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_tienThua.ForeColor = Color.Red;
             lbl_tienThua.Location = new Point(214, 303);
             lbl_tienThua.Name = "lbl_tienThua";
@@ -571,7 +571,7 @@
             // 
             // lbl_thanhTian
             // 
-            lbl_thanhTian.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_thanhTian.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_thanhTian.ForeColor = Color.FromArgb(48, 48, 48);
             lbl_thanhTian.Location = new Point(23, 214);
             lbl_thanhTian.Name = "lbl_thanhTian";
@@ -582,7 +582,7 @@
             // 
             // lbl_tienKH
             // 
-            lbl_tienKH.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_tienKH.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_tienKH.ForeColor = Color.Blue;
             lbl_tienKH.Location = new Point(23, 303);
             lbl_tienKH.Name = "lbl_tienKH";
@@ -592,17 +592,18 @@
             // 
             // lb_VAT
             // 
-            lb_VAT.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_VAT.Font = new Font("Microsoft Sans Serif", 12F);
             lb_VAT.ForeColor = Color.White;
             lb_VAT.Location = new Point(198, 209);
             lb_VAT.Name = "lb_VAT";
             lb_VAT.Size = new Size(123, 29);
             lb_VAT.TabIndex = 0;
             lb_VAT.TextAlign = ContentAlignment.MiddleCenter;
+            lb_VAT.Click += lb_VAT_Click;
             // 
             // lbl_tongTien2
             // 
-            lbl_tongTien2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_tongTien2.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_tongTien2.ForeColor = Color.White;
             lbl_tongTien2.Location = new Point(214, 116);
             lbl_tongTien2.Name = "lbl_tongTien2";
@@ -613,7 +614,7 @@
             // 
             // lbl_maHD
             // 
-            lbl_maHD.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_maHD.Font = new Font("Microsoft Sans Serif", 12F);
             lbl_maHD.ForeColor = Color.Red;
             lbl_maHD.Location = new Point(23, 116);
             lbl_maHD.Name = "lbl_maHD";
@@ -623,7 +624,7 @@
             // 
             // uiLabel14
             // 
-            uiLabel14.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel14.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel14.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel14.Location = new Point(198, 87);
             uiLabel14.Name = "uiLabel14";
@@ -634,7 +635,7 @@
             // 
             // uiLabel13
             // 
-            uiLabel13.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiLabel13.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel13.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel13.Location = new Point(11, 87);
             uiLabel13.Name = "uiLabel13";
@@ -654,7 +655,7 @@
             uiPanel4.Controls.Add(dgv_sanPham);
             uiPanel4.FillColor = Color.FromArgb(192, 192, 255);
             uiPanel4.FillColor2 = Color.FromArgb(192, 192, 255);
-            uiPanel4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiPanel4.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel4.Location = new Point(13, 173);
             uiPanel4.Margin = new Padding(4, 5, 4, 5);
             uiPanel4.MinimumSize = new Size(1, 1);
@@ -677,7 +678,7 @@
             // 
             // uiImageButton3
             // 
-            uiImageButton3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiImageButton3.Font = new Font("Microsoft Sans Serif", 12F);
             uiImageButton3.Image = (Image)resources.GetObject("uiImageButton3.Image");
             uiImageButton3.Location = new Point(3, 18);
             uiImageButton3.Name = "uiImageButton3";
@@ -691,46 +692,46 @@
             // 
             // dgv_sanPham
             // 
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(235, 243, 255);
-            dgv_sanPham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = Color.FromArgb(235, 243, 255);
+            dgv_sanPham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             dgv_sanPham.BackgroundColor = Color.FromArgb(192, 192, 255);
             dgv_sanPham.BorderStyle = BorderStyle.Fixed3D;
             dgv_sanPham.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(80, 160, 255);
-            dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgv_sanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle17.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle17.ForeColor = Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = DataGridViewTriState.True;
+            dgv_sanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             dgv_sanPham.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Window;
-            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(48, 48, 48);
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            dgv_sanPham.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = SystemColors.Window;
+            dataGridViewCellStyle18.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle18.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle18.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = DataGridViewTriState.False;
+            dgv_sanPham.DefaultCellStyle = dataGridViewCellStyle18;
             dgv_sanPham.EnableHeadersVisualStyles = false;
-            dgv_sanPham.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dgv_sanPham.Font = new Font("Microsoft Sans Serif", 12F);
             dgv_sanPham.GridColor = Color.FromArgb(80, 160, 255);
             dgv_sanPham.Location = new Point(3, 58);
             dgv_sanPham.Name = "dgv_sanPham";
             dgv_sanPham.RectColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(235, 243, 255);
-            dataGridViewCellStyle4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = Color.FromArgb(48, 48, 48);
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(80, 160, 255);
-            dataGridViewCellStyle4.SelectionForeColor = Color.White;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dgv_sanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle19.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = Color.FromArgb(235, 243, 255);
+            dataGridViewCellStyle19.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle19.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle19.SelectionBackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle19.SelectionForeColor = Color.White;
+            dataGridViewCellStyle19.WrapMode = DataGridViewTriState.True;
+            dgv_sanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             dgv_sanPham.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.BackColor = Color.White;
-            dataGridViewCellStyle5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dgv_sanPham.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle20.BackColor = Color.White;
+            dataGridViewCellStyle20.Font = new Font("Microsoft Sans Serif", 12F);
+            dgv_sanPham.RowsDefaultCellStyle = dataGridViewCellStyle20;
             dgv_sanPham.RowTemplate.Height = 29;
             dgv_sanPham.SelectedIndex = -1;
             dgv_sanPham.Size = new Size(762, 147);
@@ -749,7 +750,7 @@
             uiPanel5.FillColor = Color.FromArgb(192, 192, 255);
             uiPanel5.FillColor2 = Color.FromArgb(192, 192, 255);
             uiPanel5.FillColorGradient = true;
-            uiPanel5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiPanel5.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel5.Location = new Point(13, 381);
             uiPanel5.Margin = new Padding(4, 5, 4, 5);
             uiPanel5.MinimumSize = new Size(1, 1);
@@ -762,47 +763,47 @@
             // 
             // dgv_hoadon
             // 
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(235, 243, 255);
-            dgv_hoadon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle21.BackColor = Color.FromArgb(235, 243, 255);
+            dgv_hoadon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             dgv_hoadon.BackgroundColor = Color.FromArgb(192, 192, 255);
             dgv_hoadon.BorderStyle = BorderStyle.Fixed3D;
             dgv_hoadon.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(80, 160, 255);
-            dataGridViewCellStyle7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            dgv_hoadon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle22.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle22.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle22.ForeColor = Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = DataGridViewTriState.True;
+            dgv_hoadon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             dgv_hoadon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = SystemColors.Window;
-            dataGridViewCellStyle8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = Color.FromArgb(48, 48, 48);
-            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
-            dgv_hoadon.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle23.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = SystemColors.Window;
+            dataGridViewCellStyle23.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle23.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle23.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = DataGridViewTriState.False;
+            dgv_hoadon.DefaultCellStyle = dataGridViewCellStyle23;
             dgv_hoadon.Dock = DockStyle.Fill;
             dgv_hoadon.EnableHeadersVisualStyles = false;
-            dgv_hoadon.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dgv_hoadon.Font = new Font("Microsoft Sans Serif", 12F);
             dgv_hoadon.GridColor = Color.FromArgb(80, 160, 255);
             dgv_hoadon.Location = new Point(0, 0);
             dgv_hoadon.Name = "dgv_hoadon";
             dgv_hoadon.RectColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.FromArgb(235, 243, 255);
-            dataGridViewCellStyle9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = Color.FromArgb(48, 48, 48);
-            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(80, 160, 255);
-            dataGridViewCellStyle9.SelectionForeColor = Color.White;
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            dgv_hoadon.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle24.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = Color.FromArgb(235, 243, 255);
+            dataGridViewCellStyle24.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle24.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle24.SelectionBackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle24.SelectionForeColor = Color.White;
+            dataGridViewCellStyle24.WrapMode = DataGridViewTriState.True;
+            dgv_hoadon.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             dgv_hoadon.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.BackColor = Color.White;
-            dataGridViewCellStyle10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dgv_hoadon.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle25.BackColor = Color.White;
+            dataGridViewCellStyle25.Font = new Font("Microsoft Sans Serif", 12F);
+            dgv_hoadon.RowsDefaultCellStyle = dataGridViewCellStyle25;
             dgv_hoadon.RowTemplate.Height = 29;
             dgv_hoadon.SelectedIndex = -1;
             dgv_hoadon.Size = new Size(765, 144);
@@ -821,7 +822,7 @@
             uiPanel6.FillColor = Color.FromArgb(192, 192, 255);
             uiPanel6.FillColor2 = Color.FromArgb(192, 192, 255);
             uiPanel6.FillColorGradient = true;
-            uiPanel6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            uiPanel6.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel6.Location = new Point(13, 535);
             uiPanel6.Margin = new Padding(4, 5, 4, 5);
             uiPanel6.MinimumSize = new Size(1, 1);
@@ -834,47 +835,47 @@
             // 
             // dgv_HDCT
             // 
-            dataGridViewCellStyle11.BackColor = Color.FromArgb(235, 243, 255);
-            dgv_HDCT.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle26.BackColor = Color.FromArgb(235, 243, 255);
+            dgv_HDCT.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
             dgv_HDCT.BackgroundColor = Color.FromArgb(192, 192, 255);
             dgv_HDCT.BorderStyle = BorderStyle.Fixed3D;
             dgv_HDCT.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = Color.FromArgb(80, 160, 255);
-            dataGridViewCellStyle12.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
-            dgv_HDCT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle27.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle27.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle27.ForeColor = Color.White;
+            dataGridViewCellStyle27.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = DataGridViewTriState.True;
+            dgv_HDCT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             dgv_HDCT.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = SystemColors.Window;
-            dataGridViewCellStyle13.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle13.ForeColor = Color.FromArgb(48, 48, 48);
-            dataGridViewCellStyle13.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = DataGridViewTriState.False;
-            dgv_HDCT.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle28.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = SystemColors.Window;
+            dataGridViewCellStyle28.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle28.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle28.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = DataGridViewTriState.False;
+            dgv_HDCT.DefaultCellStyle = dataGridViewCellStyle28;
             dgv_HDCT.Dock = DockStyle.Fill;
             dgv_HDCT.EnableHeadersVisualStyles = false;
-            dgv_HDCT.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dgv_HDCT.Font = new Font("Microsoft Sans Serif", 12F);
             dgv_HDCT.GridColor = Color.FromArgb(80, 160, 255);
             dgv_HDCT.Location = new Point(0, 0);
             dgv_HDCT.Name = "dgv_HDCT";
             dgv_HDCT.RectColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = Color.FromArgb(235, 243, 255);
-            dataGridViewCellStyle14.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle14.ForeColor = Color.FromArgb(48, 48, 48);
-            dataGridViewCellStyle14.SelectionBackColor = Color.FromArgb(80, 160, 255);
-            dataGridViewCellStyle14.SelectionForeColor = Color.White;
-            dataGridViewCellStyle14.WrapMode = DataGridViewTriState.True;
-            dgv_HDCT.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle29.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = Color.FromArgb(235, 243, 255);
+            dataGridViewCellStyle29.Font = new Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle29.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle29.SelectionBackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle29.SelectionForeColor = Color.White;
+            dataGridViewCellStyle29.WrapMode = DataGridViewTriState.True;
+            dgv_HDCT.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
             dgv_HDCT.RowHeadersWidth = 51;
-            dataGridViewCellStyle15.BackColor = Color.White;
-            dataGridViewCellStyle15.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dgv_HDCT.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle30.BackColor = Color.White;
+            dataGridViewCellStyle30.Font = new Font("Microsoft Sans Serif", 12F);
+            dgv_HDCT.RowsDefaultCellStyle = dataGridViewCellStyle30;
             dgv_HDCT.RowTemplate.Height = 29;
             dgv_HDCT.SelectedIndex = -1;
             dgv_HDCT.Size = new Size(765, 159);
@@ -965,7 +966,7 @@
         private Sunny.UI.UILabel lbl_mau;
         private Sunny.UI.UILabel lbl_size;
         private Sunny.UI.UIImageButton btn_sacnQR;
-        private Sunny.UI.UILabel lbl_tongTien;
+        private Sunny.UI.UILabel lbl_giaTien;
         private Sunny.UI.UILabel uiLabel9;
         private Sunny.UI.UIImageButton btn_addHDCT;
         private Sunny.UI.UIDataGridView dgv_sanPham;
