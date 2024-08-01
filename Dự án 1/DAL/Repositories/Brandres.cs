@@ -15,5 +15,17 @@ namespace Dự_án_1.DAL
         {
             return db.Ths.ToList(); 
         }
+
+        public bool Create_Brandres(Th th)
+        {
+            db.Ths.Add(th);
+            return db.SaveChanges() > 0;
+        }
+
+        public bool Update_Branda(Th th)
+        {
+            db.Ths.Update(th);
+            return db.SaveChanges() > 0;
+        }
     }
 }

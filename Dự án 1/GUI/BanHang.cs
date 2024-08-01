@@ -964,82 +964,122 @@ namespace Dự_án_1.GUI
         {
             Class1 class1 = new Class1();
             string maspct = class1.TurnCamera();
-            var product = (from i in spct.getAllSPCTSer()
-                           join ms in ms.getAllColorSer() on i.Mamau equals ms.Mamau
-                           join kt in ss.getAllSizeSer() on i.Masize equals kt.Masize
-                           where i.Maspct == maspct
-                           select new
-                           {
-                               Product = i,
-                               Color = ms,
-                               Size = kt
-                           }).FirstOrDefault();
-            lbl_tenSP.Text = product?.Product.Tenspct;
-            lbl_mau.Text = product?.Color.Tenmau;
-            lbl_size.Text = product?.Size.Tensize;
-            decimal giaTien = product.Product.Dongia;
-            lbl_giaTien.Text = giaTien.ToString();
-            object img = product.Product.HinhAnh;
-            pic_spct.Image?.Dispose();
-            byte[] imageData = (byte[])img;
-            using (MemoryStream ms = new MemoryStream(imageData))
-            {
-                Image image = Image.FromStream(ms);
-                pic_spct.Image = image;
-            }
-            lbl_sl.Text = 1.ToString();
 
-            // Them hoa don
-            if (!string.IsNullOrEmpty(lbl_maHD.Text))
+            if( maspct == null)
             {
-                if (spct.getAllSPCTSer().Find(x => x.Maspct == maspct).Soluong >= int.Parse(lbl_sl.Text))
+                var product = (from i in spct.getAllSPCTSer()
+                               join ms in ms.getAllColorSer() on i.Mamau equals ms.Mamau
+                               join kt in ss.getAllSizeSer() on i.Masize equals kt.Masize
+                               where i.Maspct == maspct
+                               select new
+                               {
+                                   Product = i,
+                                   Color = ms,
+                                   Size = kt
+                               }).FirstOrDefault();
+                lbl_tenSP.Text = product?.Product.Tenspct;
+                lbl_mau.Text = product?.Color.Tenmau;
+                lbl_size.Text = product?.Size.Tensize;
+                decimal giaTien = product?.Product.Dongia ?? 0;
+                lbl_giaTien.Text = giaTien.ToString();
+                object img = product?.Product.HinhAnh;
+                pic_spct.Image?.Dispose();
+                byte[] imageData = (byte[])img;
+                using (MemoryStream ms = new MemoryStream(imageData))
                 {
-                    var exeHDCT = hdct.getAllHDCTSer().FirstOrDefault(x => x.Mahd == lbl_maHD.Text && x.Maspct == maspct);
-                    if (exeHDCT != null)
+                    Image image = Image.FromStream(ms);
+                    pic_spct.Image = image;
+                }
+                lbl_sl.Text = 1.ToString();
+
+                // Them hoa don
+                if (!string.IsNullOrEmpty(lbl_maHD.Text))
+                {
+                    if (spct.getAllSPCTSer().Find(x => x.Maspct == maspct).Soluong >= int.Parse(lbl_sl.Text))
                     {
-                        int slcong = int.Parse(lbl_sl.Text);
-                        int slThucTe = exeHDCT.Soluong + slcong;
-                        hdct.UpdateHDCTSer(exeHDCT.Idhdct, maspct, lbl_maHD.Text, slThucTe, exeHDCT.Dongia);
-                        loadHDCT();
-                        var spctItem = spct.getAllSPCTSer().Find(x => x.Maspct == maspct);
-                        if (spctItem != null)
+                        var exeHDCT = hdct.getAllHDCTSer().FirstOrDefault(x => x.Mahd == lbl_maHD.Text && x.Maspct == maspct);
+                        if (exeHDCT != null)
                         {
-                            int slcon = spctItem.Soluong;
-                            int slconlai = spct.tinhToanSl(slcon, int.Parse(lbl_sl.Text));
-                            string mess1 = spct.updateSL(maspct, slconlai);
-                            loadSP();
+                            int slcong = int.Parse(lbl_sl.Text);
+                            int slThucTe = exeHDCT.Soluong + slcong;
+                            hdct.UpdateHDCTSer(exeHDCT.Idhdct, maspct, lbl_maHD.Text, slThucTe, exeHDCT.Dongia);
+                            loadHDCT();
+                            var spctItem = spct.getAllSPCTSer().Find(x => x.Maspct == maspct);
+                            if (spctItem != null)
+                            {
+                                int slcon = spctItem.Soluong;
+                                int slconlai = spct.tinhToanSl(slcon, int.Parse(lbl_sl.Text));
+                                string mess1 = spct.updateSL(maspct, slconlai);
+                                loadSP();
+                            }
+                        }
+                        else
+                        {
+                            decimal donGia = spct.getAllSPCTSer().Find(x => x.Maspct == maspct).Dongia;
+                            hdct.CreateHDCTSer(CreateMaHDCT(), maspct, lbl_maHD.Text, int.Parse(lbl_sl.Text), donGia);
+                            loadHDCT();
+
+                            var spctItem = spct.getAllSPCTSer().Find(x => x.Maspct == maspct);
+                            if (spctItem != null)
+                            {
+                                int slcon = spctItem.Soluong;
+                                int slconlai = spct.tinhToanSl(slcon, int.Parse(lbl_sl.Text));
+                                string mess1 = spct.updateSL(maspct, slconlai);
+                                loadSP();
+                            }
                         }
                     }
                     else
                     {
-                        decimal donGia = spct.getAllSPCTSer().Find(x => x.Maspct == maspct).Dongia;
-                        hdct.CreateHDCTSer(CreateMaHDCT(), maspct, lbl_maHD.Text, int.Parse(lbl_sl.Text), donGia);
-                        loadHDCT();
-
-                        var spctItem = spct.getAllSPCTSer().Find(x => x.Maspct == maspct);
-                        if (spctItem != null)
-                        {
-                            int slcon = spctItem.Soluong;
-                            int slconlai = spct.tinhToanSl(slcon, int.Parse(lbl_sl.Text));
-                            string mess1 = spct.updateSL(maspct, slconlai);
-                            loadSP();
-                        }
+                        MessageBox.Show("Số lượng hàng còn lại không đủ ", "Thông báo");
+                        lbl_sl.Text = null;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Số lượng hàng còn lại không đủ ", "Thông báo");
-                    lbl_sl.Text = null;
+                    MessageBox.Show("Bạn chưa có hóa đơn", "Thông báo");
                 }
             }
             else
             {
-                MessageBox.Show("Bạn chưa có hóa đơn", "Thông báo");
+                MessageBox.Show("Khong tim thay ma QR");
             }
         }
         private void lb_VAT_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            // Lấy văn bản từ textBox1 và đảm bảo rằng nó không phải là null
+            string tensp_serching = textBox1.Text ?? string.Empty;
+
+            // Lấy danh sách sản phẩm chi tiết từ spct
+            var allSPCT = spct.getAllSPCTSer();
+            if (allSPCT == null)
+            {
+                // Xử lý tình huống khi danh sách sản phẩm chi tiết trả về null
+                MessageBox.Show("Danh sách sản phẩm không thể tải.");
+                return;
+            }
+
+            // Kiểm tra nếu trường nhập liệu là trống
+            if (string.IsNullOrWhiteSpace(tensp_serching))
+            {
+                // Nếu trống, hiển thị toàn bộ danh sách sản phẩm
+                dgv_sanPham.DataSource = allSPCT;
+            }
+            else
+            {
+                // Tìm sản phẩm chi tiết dựa trên tên
+                var filteredList = allSPCT.FindAll(x => x.Tenspct != null && x.Tenspct.ToLower().Contains(tensp_serching.ToLower()));
+
+                // Hiển thị danh sách sản phẩm phù hợp
+                dgv_sanPham.DataSource = filteredList;
+            }
+        }
+
+
     }
 }
