@@ -89,9 +89,6 @@ namespace WinFormsApp1
 
         private void uiMarkLabel6_Click(object sender, EventArgs e)
         {
-            KhuyenMai km = new();
-            uiSplitContainer1.SplitterDistance = 0;
-            OpenForm(km);
         }
 
         private void uiMarkLabel7_Click(object sender, EventArgs e)

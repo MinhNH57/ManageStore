@@ -2,6 +2,7 @@
 using Dự_án_1.BLL.Service;
 using Dự_án_1.DAL.Models;
 using Dự_án_1.DAL.Respositories;
+using Dự_án_1.GUI;
 using Dự_án_1.Properties;
 using OfficeOpenXml;
 using OfficeOpenXml.Drawing;
@@ -67,27 +68,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
             dgv_dataSP.Columns[7].HeaderText = "Tình trạng";
         }
 
-        public void loadMact()
-        {
-            var q = from kmCT in kmctser.getAllKMCTSer()
-                    join spctt in spct.getAllSPCTSer() on kmCT.Maspct equals spctt.Maspct
-                    join km in KMSer.getAllKhuyenMaiSer() on kmCT.Makm equals km.Makm
-
-                    where kmCT.Makmct == null || !kmCT.Makmct.Contains("Out")
-                    select new
-                    {
-                        kmCT.Makmct,
-                        spctt.Tenspct,
-                        km.Tenkm,
-                        km.Slgiam,
-                        kmCT.Ghichu,
-                        spctt.Dongia,
-                        km.Ngayketthuc,
-                    };
-            dgv_MaCt.DataSource = q.ToList();
-            dgv_MaCt.Columns["Ghichu"].HeaderText = "Giá gốc";
-
-        }
         public void loadcb_Brand()
         {
             var q = from i in thuongHieu.getAllBrandSer() select i;
@@ -102,13 +82,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
             cb_mau.DataSource = q.ToList();
             cb_mau.DisplayMember = "Tenmau";
             cb_mau.ValueMember = "Mamau";
-        }
-        public void loadcb_GIA()
-        {
-            var q = from i in KMSer.getAllKhuyenMaiSer() select i;
-            cb_phantram.DataSource = q.ToList();
-            cb_phantram.DisplayMember = "Slgiam";
-            cb_phantram.ValueMember = "Makm";
         }
 
 
@@ -155,19 +128,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
             dvg_sPCT.Columns[6].HeaderText = "Đơn giá";
             dvg_sPCT.Columns[7].HeaderText = "Tình trạng";
         }
-        public void loadSPCTgia()
-        {
-            var q = from i in spct.getAllSPCTSer()
-
-                    select new
-                    {
-                        i.Maspct,
-
-                        i.Dongia,
-
-                    };
-            dataGridView1.DataSource = q.ToList();
-        }
 
         private void SanPham_Load(object sender, EventArgs e)
         {
@@ -177,14 +137,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
             loadSPCT();
             loadcb_Color();
             loadcb_KichThuoc();
-            loadMact();
-            loadcb_GIA();
-            loadSPCTgia();
-            LoadGiamGia();
-            LoadGiamGiaf();
-            loadcb_tenspct();
-            loadcb_tenma();
-            loadcb();
         }
         #region
         public string CreateMaSanPham()
@@ -294,7 +246,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
             int i = e.RowIndex;
             if (i >= 0)
             {
-                Cb_tenSP.Text = dvg_sPCT.Rows[i].Cells[1].Value.ToString();
                 txt_maSPCT.Text = dvg_sPCT.Rows[i].Cells[0].Value.ToString();
                 txt_tenSPCT.Text = dvg_sPCT.Rows[i].Cells[1].Value.ToString();
                 cb_size.Text = dvg_sPCT.Rows[i].Cells[2].Value.ToString();
@@ -302,11 +253,10 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
                 cb_maSP.Text = dvg_sPCT.Rows[i].Cells[4].Value.ToString();
                 txt_soLuong.Text = dvg_sPCT.Rows[i].Cells[5].Value.ToString();
                 txt_Gia.Text = dvg_sPCT.Rows[i].Cells[6].Value.ToString();
-                txt_gg.Text = dvg_sPCT.Rows[i].Cells[6].Value.ToString();
 
                 var s = spct.FindbyIDSer(txt_maSPCT.Text);
                 object img = s.HinhAnh;
-                if(img != null)
+                if (img != null)
                 {
                     byte[] imageData = (byte[])img;
                     Image image;
@@ -366,222 +316,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
         {
 
         }
-        DUAN1NHOMContext db = new DUAN1NHOMContext();
-        private void btn_themmgg_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_gg.Text))
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
-                return;
-            }
-            else
-            {
-                string cccdPattern = @"^\d{9}$|^\d{12}$";
-                if (!Regex.IsMatch(txt_gg.Text, @"^\d+$"))
-                {
-                    MessageBox.Show("Vui lòng kiểm tra lại giá, chỉ được nhập ký tự số.", "Thông báo");
-                    return;
-                }
-
-                var q = (from i in spct.getAllSPCTSer()
-                         where i.Maspct == Cb_tenSP.SelectedValue.ToString() && i.Dongia == decimal.Parse(txt_gg.Text)
-                         select i).FirstOrDefault();
-
-                if (q != null)
-                {
-
-                    Kmct id = db.Kmcts.Where(z => z.Makmct.Equals(txt_MaKmct.Text)).FirstOrDefault();
-                    if (id != null)
-                    {
-                        MessageBox.Show("Id đã được sử dụng mời chọn Id khác!! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return;
-                    }
-
-                    var k = kmctser.getAllKMCTSer().Find(x => x.Maspct == Cb_tenSP.SelectedValue.ToString());
-                    if (k != null)
-
-                    {
-
-                        MessageBox.Show("Sản phẩm này đã được giảm giá bởi mã này mời chọn sản phẩm khác!! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return;
-                    }
-                    string mess = kmctser.CreateKMCTSer(txt_MaKmct.Text, Cb_tenSP.SelectedValue.ToString(), cb_phantram.SelectedValue.ToString(), txt_gg.Text);
-                    MessageBox.Show(mess, "Thong bao");
-                }
-                else
-                {
-                    MessageBox.Show("Sai Giá Gốc.");
-                    return;
-                }
-            }
-            loadMact();
-            loadcb_GIA();
-            loadSPCTgia();
-            LoadGiamGia();
-            LoadGiamGiaf();
-            loadcb_tenspct();
-            loadcb_tenma();
-            loadcb();
-
-        }
-
-        private void dgv_MaCt_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgv_MaCt_CellClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-            int i = e.RowIndex;
-            if (i < 0)
-            {
-
-            }
-            else
-            {
-                txt_MaKmct.Text = dgv_MaCt.Rows[i].Cells[0].Value.ToString();
-                Cb_tenSP.Text = dgv_MaCt.Rows[i].Cells[1].Value.ToString();
-                cb_Makm.Text = dgv_MaCt.Rows[i].Cells[2].Value.ToString();
-                cb_phantram.Text = dgv_MaCt.Rows[i].Cells[3].Value.ToString();
-                txt_gg.Text = dgv_MaCt.Rows[i].Cells[4].Value.ToString();
-                txt_giagiam.Text = dgv_MaCt.Rows[i].Cells[5].Value.ToString();
-                dtpNgayKetThuc.Text = dgv_MaCt.Rows[i].Cells[6].Value.ToString();
-            }
-        }
-        public void LoadGiamGia()
-        {
-            /* cb_phantram.Items.Clear();
- */
-            // Lấy danh sách tất cả khuyến mãi
-            var allKhuyenMai = KMSer.getAllKhuyenMaiSer();
-
-            // Lọc khuyến mãi theo ngày kết thúc lớn hơn ngày hiện tại
-            var filteredKhuyenMai = allKhuyenMai.Where(km => km.Ngayketthuc > DateTime.Now).ToList();
-
-            // Kiểm tra nếu có khuyến mãi sau khi lọc
-            if (filteredKhuyenMai.Any())
-            {
-                // Hiển thị danh sách khuyến mãi đã lọc trong ComboBox
-                cb_phantram.DataSource = filteredKhuyenMai;
-                cb_phantram.DisplayMember = "Slgiam";
-                cb_phantram.ValueMember = "Makm";
-            }
-        }
-
-        private void btn_suamgg_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_giagiam.Text))
-            {
-                MessageBox.Show("Vui lòng chọn sản phẩm cập nhật giá.");
-                return;
-            }
-            DateTime ngayKetThuc = DateTime.Parse(dtpNgayKetThuc.Text);
-            DateTime today = DateTime.Parse(dt_day.Text);
-            /* if (today > ngayKetThuc)
-             {
-                 decimal tinh = decimal.Parse(txt_gg.Text) ;
-                 txt_giagiam.Text = tinh.ToString();
-                 string mes = spct.updategia(Cb_tenSP.SelectedValue.ToString(), decimal.Parse(txt_giagiam.Text));
-                 MessageBox.Show(mes, "Thong bao");
-             }*/
-            if (today < ngayKetThuc)
-            {
-                decimal a = decimal.Parse(txt_gg.Text);
-                txt_gg.Text = a.ToString();
-                decimal b = decimal.Parse(txt_giagiam.Text);
-                txt_giagiam.Text = b.ToString();
-                if (a == b)
-                {
-                    decimal tinh = (decimal.Parse(txt_giagiam.Text) - (decimal.Parse(txt_giagiam.Text) * decimal.Parse(cb_phantram.Text) / 100));
-                    txt_giagiam.Text = tinh.ToString();
-                    string mes = spct.updategia(Cb_tenSP.SelectedValue.ToString(), decimal.Parse(txt_giagiam.Text));
-                    MessageBox.Show(mes, "Thong bao");
-
-                }
-                if (a > b)
-                {
-                    MessageBox.Show("Sản phẩn này đã giảm giá hoặc chưa hết thời gian giảm giá /nVui Lòng đợi đến hết thời gian giảm giá" +
-                        "", "Thong bao");
-                    return;
-                }
-
-            }
-            else
-            {
-                {
-                    decimal tinh = decimal.Parse(txt_gg.Text);
-                    txt_giagiam.Text = tinh.ToString();
-                    string mes = spct.updategia(Cb_tenSP.SelectedValue.ToString(), decimal.Parse(txt_giagiam.Text));
-                    MessageBox.Show(mes, "Thong bao");
-                }
-            }
-            /*
-                        decimal tinh = (decimal.Parse(txt_giagiam.Text) - (decimal.Parse(txt_giagiam.Text) * decimal.Parse(cb_phantram.Text) / 100));
-                        txt_giagiam.Text = tinh.ToString();
-                        string mes = spct.updategia(Cb_tenSP.SelectedValue.ToString(), decimal.Parse(txt_giagiam.Text), Cb_tenSP.SelectedValue.ToString());
-                        MessageBox.Show(mes, "Thong bao");*/
-            loadSPCT();
-            loadSPCTgia();
-            loadMact();
-            loadcb_GIA();
-            loadSPCTgia();
-            LoadGiamGia();
-            LoadGiamGiaf();
-            loadcb_tenspct();
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_gg.Text))
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
-                return;
-            }
-            var q = spct.getAllSPCTSer().Find(x => x.Dongia == decimal.Parse(txt_gg.Text));
-            if (q != null)
-            {
-
-
-                string cccdPattern = @"^\d{9}$|^\d{12}$";
-                if (!Regex.IsMatch(txt_gg.Text, @"^\d+$"))
-                {
-                    MessageBox.Show("Vui lòng kiểm tra lại giá, chỉ được nhập ký tự số.", "Thông báo");
-                    return;
-                }
-                string mess = kmctser.UpdateKMctSer(txt_MaKmct.Text, Cb_tenSP.SelectedValue.ToString(), cb_phantram.SelectedValue.ToString());
-                MessageBox.Show(mess, "Thong bao");
-            }
-            else
-            {
-                MessageBox.Show("Sai Giá Gốc.");
-                return;
-            }
-            loadMact();
-            loadSPCT();
-            loadSPCTgia();
-            loadMaSP();
-            loadcb_GIA();
-            loadSPCTgia();
-            LoadGiamGia();
-            LoadGiamGiaf();
-            loadcb_tenspct();
-            loadcb_tenma();
-            loadcb();
-        }
-
-        private void dgv_SpCt_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            /*int i = e.RowIndex;
-            if (i >= 0)
-            {
-                txt_giagiam.Text = dgv_SpCt.Rows[i].Cells[1].Value.ToString();
-                
-                decimal tinh = (decimal.Parse(txt_giagiam.Text) - (decimal.Parse(txt_giagiam.Text) * decimal.Parse(cb_phantram.Text) / 100));
-                txt_giagiam.Text = tinh.ToString();
-            }*/
-        }
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
@@ -597,7 +331,7 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
             var q = from i in sp.getAllSanPhamSer()
                     join
                     a in thuongHieu.getAllBrandSer() on i.Math equals a.Math
-                    where i.Tensp.Contains(txt_tìmKiem1.Text) || i.Loaisp.Contains(txt_tìmKiem1.Text)
+                    where i.Tensp.ToLower().Contains(txt_tìmKiem1.Text.ToLower()) || i.Loaisp.ToLower().Contains(txt_tìmKiem1.Text.ToLower())
                     select new
                     {
                         i.Masp,
@@ -621,84 +355,10 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
 
         }
 
-        private void cb_Makm_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-        private void LoadGiamGiaf()
-        {
-            /* cb_phantram.Items.Clear();*/
-            DateTime today = DateTime.Now;
-
-            foreach (var magiamgia in KMSer.getAllKhuyenMaiSer())
-            {
-                if (magiamgia.Ngayketthuc > today)
-                {
-                    cb_phantram.Text = magiamgia.Slgiam.ToString();
-                }
-            }
-        }
-        public void loadcb_tenspct()
-        {
-            var q = from i in spct.getAllSPCTSer() select i;
-            Cb_tenSP.DataSource = q.ToList();
-            Cb_tenSP.DisplayMember = "Tenspct";
-            Cb_tenSP.ValueMember = "Maspct";
-        }
-        public void loadcb()
-        {
-
-        }
-
-        private void cb_phantram_Click(object sender, EventArgs e)
-        {
-            /*cb_Makm.Text= cb_phantram.Text.Trim();
-            var q = from i in KMSer.getAllKhuyenMaiSer() select i;*/
-            var k = KMSer.getAllKhuyenMaiSer().Find(x => x.Tenkm == cb_Makm.Text);
-            cb_Makm.Text = cb_phantram.Text; ;
-            /*cb_Makm.DisplayMember = "Tenkm";
-            cb_Makm.ValueMember = "Slgiam";
-*/
-        }
-        public void loadcb_tenma()
-        {
-            var q = from i in KMSer.getAllKhuyenMaiSer() select i;
-            cb_Makm.DataSource = q.ToList();
-            cb_Makm.DisplayMember = "Tenkm";
-            cb_Makm.ValueMember = "Makm";
-        }
-
-        private void cb_Makm_Click(object sender, EventArgs e)
-        {
-            cb_phantram.Text = cb_Makm.Text; ;
-        }
 
         private void Cb_tenSP_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int i = e.RowIndex;
-            if (i >= 0)
-            {
-
-                txt_giagiam.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-
-
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            txt_MaKmct.Clear();
-            Cb_tenSP.Text = "";
-            txt_Gia.Clear();
-            cb_Makm.Text = "";
-            txt_giagiam.Clear();
-            cb_phantram.Text = "";
-            dtpNgayKetThuc.Value = DateTime.Now;
-            dt_day.Value = DateTime.Now;
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -740,7 +400,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
                     loadSP();
                     loadSPCT();
                     loadSPCT();
-                    loadSPCTgia();
                     txt_tenSP.Clear();
                 }
             }
@@ -769,8 +428,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
                     loadSPCT();
                     loadcb_Color();
                     loadcb_KichThuoc();
-                    LoadGiamGiaf();
-                    loadcb_tenspct();
                 }
             }
             else
@@ -880,14 +537,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
                     string mess = spct.CreateSPCTSer(CreateMaSanPhamCT(), txt_tenSPCT.Text, cb_size.SelectedValue.ToString(), cb_mau.SelectedValue.ToString(), cb_maSP.Text, decimal.Parse(txt_Gia.Text), int.Parse(txt_soLuong.Text), imageBytes);
                     MessageBox.Show(mess, "Thong bao");
                     loadSPCT();
-                    loadMact();
-                    loadcb_GIA();
-                    loadSPCTgia();
-                    LoadGiamGia();
-                    LoadGiamGiaf();
-                    loadcb_tenspct();
-                    loadcb_tenma();
-                    loadcb();
 
                 }
                 else
@@ -946,7 +595,6 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
                     MessageBox.Show(mess2, "Thông báo");
                     loadSPCT();
 
-                    loadSPCTgia();
                 }
             }
             catch (Exception ex)
@@ -1137,13 +785,50 @@ namespace WF.Form_Chức_Năng.Form_Chức_Năng___ADMIN
                         loadSPCT();
 
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Lỗi hệ thống");
                     }
                 }
 
             }
+        }
+
+        private void txt_timKiem_TextChanged(object sender, EventArgs e)
+        {
+            var q = from i in spct.getAllSPCTSer()
+                    join ms in mauSac.getAllColorSer() on i.Mamau equals ms.Mamau
+                    join kt in kichThuoc.getAllSizeSer() on i.Masize equals kt.Masize
+                    join s in sp.getAllSanPhamSer() on i.Masp equals s.Masp
+                    where i.Tenspct.ToLower().Contains(txt_timKiem.Text.ToLower())
+                    select new
+                    {
+                        i.Maspct,
+                        i.Tenspct,
+                        kt.Tensize,
+                        ms.Tenmau,
+                        s.Masp,
+                        i.Soluong,
+                        DonGia = i.Dongia.ToString("#,##0"),
+                        i.Tt
+                    };
+            dvg_sPCT.DataSource = q.ToList();
+        }
+
+        private void dvg_sPCT_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_suaSP_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new();
+            frm.ShowDialog();
         }
     }
 }
