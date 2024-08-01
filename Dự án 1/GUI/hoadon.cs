@@ -116,24 +116,32 @@ namespace Dự_án_1.GUI
 
         private void txt_timKiem_TextChanged(object sender, EventArgs e)
         {
-            var q = from i in hd.getAllHoaDonSer()
-                    join
-                    a in kh.getAllKhachHangSer() on i.Makh equals a.Makh
-                    where a.Tenkh.Contains(txt_timKiem.Text.Trim()) && i.TinhTrang == "Đã thanh toán"
+            var i = from a in hd.getAllHoaDonSer()
+                    join k in kh.getAllKhachHangSer() on a.Makh equals k.Makh
+                    join n in nv.getAllnhanvienSer() on a.Manv equals n.Manv
+                    join h in hdct.getAllHDCTSer() on a.Mahd equals h.Mahd into hGroup
+                    where k.Tenkh.ToLower().Contains(txt_timKiem.Text.ToLower())
                     select new
                     {
-                        i.Mahd,
-                        i.Ngaythang,
-                        a.Tenkh,
+                        a.Mahd,
+                        a.Ngaythang,
+                        k.Tenkh,
+                        n.Tennv,
+                        TongTien = hGroup.Sum(x => (x.Dongia) * (x.Soluong)),
+                        a.TinhTrang
                     };
-            if (!string.IsNullOrEmpty(txt_timKiem.Text))
+            var hoaDonWithVAT = i.Select(hds => new
             {
-                dgv_HOADON.DataSource = q.ToList();
-            }
-            else
-            {
-                loadHoaDon();
-            }
+                hds.Mahd,
+                hds.Ngaythang,
+                hds.Tenkh,
+                hds.Tennv,
+                tongtien = hds.TongTien.ToString("#,##0"),
+                VAT = (VAT.mucVAT).ToString(),
+                TongTienVAT = (hds.TongTien + (hds.TongTien * 0.1m)).ToString("#,##0"),
+                hds.TinhTrang
+            });
+            dgv_HOADON.DataSource = hoaDonWithVAT.ToList();
         }
 
         private void pdhd_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)

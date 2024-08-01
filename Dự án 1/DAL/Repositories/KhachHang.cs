@@ -7,16 +7,34 @@ using System.Threading.Tasks;
 
 namespace Dự_án_1.DAL.Repositories
 {
-    internal class KhachHang
+    public class KhachHang
     {
         DUAN1NHOMContext db = new();
 
+        public KhachHang(DUAN1NHOMContext context)
+        {
+            db = context;
+        }
+
+        public KhachHang ()
+        {
+
+        }
         public List<Kh> GetAllKhachHangRes()
         {
             return db.Khs.ToList();
         }
         public bool CreateKHres(Kh KH)
         {
+            if(KH.Sdt.Length < 10)
+            {
+                throw new ArgumentOutOfRangeException(nameof(KH.Sdt), "Số điện thoại phải có ít nhất 10 ký tự.");
+            }
+
+            if(KH.Sdt.Length > 10)
+            {
+                throw new ArgumentOutOfRangeException(nameof(KH.Sdt), "Số điện thoại phải có ít nhất 10 ký tự.");
+            }
             db.Khs.Add(KH);
             return db.SaveChanges() > 0;
         }

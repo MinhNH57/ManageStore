@@ -19,16 +19,13 @@
     <Compile Update="GUI\khachhang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\KhuyenMai.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="GUI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\magg.cs">
+    <Compile Update="GUI\nhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\nhanvien.cs">
+    <Compile Update="GUI\SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\TK.cs">
@@ -38,9 +35,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\trangNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
